@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>POD</title>
+        <link rel="stylesheet" href="Common.css">
+	<link rel="stylesheet" href="Nasa.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+     	<script>
+		$(document).ready(function() {
+		    $.ajax({
+        	    url: "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY",
+        	    type:"GET",
+        	    success:function(data){
+            	    //alert(data.hdurl);
+            	    $('#nasaimg').append(`<h1>${data.title}</h1><br>`);
+            	    $('#nasaimg').append(`<p>${data.explanation}</p><br>`);
+            	    $('#nasaimg').append(`<br><img src=${data.hdurl}>`);
+                    console.log(data);
+        	},
+        	    error:function(err){
+            	    //alert(err);
+            	    console.log(err);
+        	}        
+    		})
+		});
+	</script>
+    </head>
+    <body>
+    <div class="mainNasa">
+            <div class="navbar">
+		<div class="menu">  
+                	<a class=".ahomemenu" href="HomePage.html"><i class="fa fa-home"></i>HOME</a>
+                </div>
+                <div class="icon">
+                    <h2 class="logo"><b>Picture Of The Day</b></h2>
+                </div>
+  	    </div>
+            <div id="nasaimg">
+
+            </div>
+     </div>
+
+     </body>
+</html>
+            

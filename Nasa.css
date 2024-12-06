@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.logo{
+    color: #fafafa;
+    font-size: 30px;
+    font-family: Arial;
+    font-style: italic;
+    padding-left: 30px;
+    float: left;
+    padding-top: 30px;
+}
