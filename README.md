@@ -11,7 +11,7 @@
     - Delivers Live Weather Forecasts using Open Weather APIs.
     - Offers detailed Country Information for selected nations.
     - Features Latest News Updates using the NEWS API.
-    - 
+      
 **Implemented Features:**
 1) Astronomy Picture of the Day:
    Integrates NASA's Open APIs to display the daily featured astronomy image with detailed metadata, repurposed for easy accessibility.
